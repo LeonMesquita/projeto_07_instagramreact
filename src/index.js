@@ -1,4 +1,5 @@
-import reactDom from "react-dom"
+
+import ReactDOM from 'react-dom';
 
 function TopBar(){
     return (
@@ -40,5 +41,5 @@ function AppBody(){
     )
 }
 
-const bodyElement = document.querySelector(".root");
-ReactDOM.render(AppBody, bodyElement);
+const app = AppBody()
+ReactDOM.render(app, document.querySelector(".root"));
