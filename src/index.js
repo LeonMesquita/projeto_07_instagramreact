@@ -1,0 +1,44 @@
+import reactDom from "react-dom"
+
+function TopBar(){
+    return (
+       // <!--barra superior-->
+        <div class="bar-father">
+          <div class="top-bar">
+              <div class="div-logo">
+                  <a href=""> <div><img class="insta-icon" src="images/icons/logo-instagram.svg" /></div></a>
+                  <a href=""> <div><img class="insta-logo" src="images/Instagram.png" /></div></a>
+              </div>
+      
+              <div>
+              
+                  <input  class="divBusca" type="text" id="txtBusca" placeholder="Pesquisar"/>
+              </div>
+              <div class="div-logo">
+                  <a href=""><ion-icon name="paper-plane-outline"   class="top-icons"></ion-icon></a>
+                  <a href=""><ion-icon name="compass-outline"   class="top-icons"></ion-icon></a>
+                <a href=""><ion-icon name="heart-outline"  class="top-icons"></ion-icon></a>
+                 <a href=""><ion-icon name="person-outline"  class="top-icons"></ion-icon></a>
+              </div>
+              
+          </div>
+      
+          <div class="mobile-bar">
+              <a href=""> <div><img class="insta-icon" src="images/icons/logo-instagram.svg" /></div></a>
+              <a href=""> <div><img class="insta-logo" src="images/instagram.png" /></div></a>
+              <a href=""><ion-icon name="paper-plane-outline"   class="top-icons"></ion-icon></a>
+          </div>
+          </div>
+    )
+}
+
+function AppBody(){
+    return (
+        <div>
+            <TopBar />
+        </div>
+    )
+}
+
+const bodyElement = document.querySelector(".root");
+ReactDOM.render(AppBody, bodyElement);
