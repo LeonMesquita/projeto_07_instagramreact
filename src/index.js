@@ -1,5 +1,17 @@
 
 import ReactDOM from 'react-dom';
+import Posts from './Posts';
+import SideBar from './SideBar';
+import Stories from './Stories';
+
+const posts = [
+
+];
+
+
+
+
+
 
 function TopBar(){
     return (
@@ -37,6 +49,13 @@ function AppBody(){
     return (
         <div>
             <TopBar />
+            <div class="page-content">
+                <div class="main-content-div">
+                    <Stories />
+                    <Posts />
+                </div>
+                <SideBar />
+            </div>
         </div>
     )
 }
