@@ -38,7 +38,7 @@ function TopBar(){
       
           <div class="mobile-bar">
               <a href=""> <div><img class="insta-icon" src="images/icons/logo-instagram.svg" /></div></a>
-              <a href=""> <div><img class="insta-logo" src="images/instagram.png" /></div></a>
+              <a href=""> <div><img class="insta-logo" src="images/Instagram.png" /></div></a>
               <a href=""><ion-icon name="paper-plane-outline"   class="top-icons"></ion-icon></a>
           </div>
           </div>

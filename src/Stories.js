@@ -1,18 +1,45 @@
 export default function Stories(){
+    const stories = [
+        {
+            image: "images/profiles/9gag 1.png",
+            text: "9gag"
+        },
+        {
+            image: "images/profiles/meowed 1.png",
+            text: "meowed"
+        },
+        {
+            image: "images/profiles/barked 1.png",
+            text: "barked"
+        },
+        {
+            image: "images/profiles/nathanwpylestrangeplanet 1.png",
+            text: "nathan"
+        },
+        {
+            image: "images/profiles/wawawiwacomicsa 1.png",
+            text: "wawa"
+        },
+        {
+            image: "images/profiles/respondeai 1.png",
+            text: "respondeai"
+        },
+        {
+            image: "images/profiles/filomoderna 1.png",
+            text: "filo"
+        },
+        {
+            image: "images/profiles/memeriagourmet 1.png",
+            text: "meme"
+        }
+
+    ];
     return (
         <div class="stories-box">
-            <Storie src="images/profiles/9gag 1.png" text="9gag"/>
-            <Storie src="images/profiles/meowed 1.png" text="meowed"/>
-            <Storie src="images/profiles/barked 1.png" text="barked"/>
-            <Storie src="images/profiles/nathanwpylestrangeplanet 1.png" text="nathan"/>
-            <Storie src="images/profiles/wawawiwacomicsa 1.png" text="wawa"/>
-            <Storie src="images/profiles/respondeai 1.png" text="respondeai"/>
-            <Storie src="images/profiles/filomoderna 1.png" text="filo"/>
-            <Storie src="images/profiles/memeriagourmet 1.png" text="meme"/>
+            {stories.map(storie => <Storie src={storie.image} text={storie.text}/>)}
             <ion-icon class="stories-button" name="chevron-forward-outline"></ion-icon>    
         </div>
-
-    )
+    );
 }
 
 function Storie(props){

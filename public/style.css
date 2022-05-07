@@ -127,7 +127,7 @@ a {
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 5px;
-    overflow-x: scroll;
+    overflow:hidden;
     position: relative;
  
 
