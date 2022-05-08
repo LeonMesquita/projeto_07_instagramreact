@@ -60,6 +60,7 @@ a {
     height: 25px;
     width: 25px;
     margin-right: 10px;
+
 }
 
 .insta-logo {
@@ -90,8 +91,8 @@ a {
 
 .top-icons{
     color: #000000;
-    height: 30px;
-    width: 30px;
+    height: 27px;
+    width: 27px;
     margin-left: 15px;
 }
 
@@ -222,20 +223,34 @@ a {
     margin: 10px 10px 10px 15px;
 }
 
-.reaction-icons{
-    color: #000000;
-    height: 30px;
-    width: 30px;
+
+.liked-icon{
+       border: none;
+    background-color: transparent;
+    color: red;
+    height: 40px;
+    width: 40px;
     margin-right: 10px;
 }
 
 .reactions-style {
     border: none;
     background-color: transparent;
+    color: #000000;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+
 }
-.reaction-icons:hover{
+.reactions-style:hover, .liked-icon:hover{
     cursor:pointer;
     color: grey;
+}
+
+.reactions-style ion-icon, .liked-icon ion-icon{
+    width: 100%;
+    height: 100%;
+
 }
 
 .image-top-text {

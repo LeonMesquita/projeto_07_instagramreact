@@ -45,8 +45,8 @@ export default function Stories(){
 function Storie(props){
     return (
         <div class="storie">
-            <img class="storie-circle" src="images/stories_background.jpg" />
-            <a href="">
+            <img class="storie-circle" src="images/stories_background.jpg"  alt=""/>
+            <a href="/">
                 <img class="storie-image" src={props.src} alt="" />
             </a>
 

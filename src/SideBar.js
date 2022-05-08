@@ -30,7 +30,7 @@ export default function SideBar(){
         <div>
             <div class="suggestions-div">
                 <h2 class="h2">Sugestões para você</h2>
-                <a href=""><h1 class="h1">Ver tudo</h1></a>
+                <a href="/"><h1 class="h1">Ver tudo</h1></a>
             </div>
             {suggestions.map(suggestion => <Suggestion profile={suggestion.profile} username={suggestion.username}/>)}
         </div>
@@ -46,13 +46,13 @@ function Suggestion(props){
     return (
         <div class="suggestions-div">
         <div class="sidebar-user-div">
-             <img class="user-profile" src={props.profile} />
+             <img class="user-profile" src={props.profile}  alt=""/>
              <div>
-                <a href="" class="user-name">{props.username}</a>
+                <a href="/" class="user-name">{props.username}</a>
                 <h3 class="name">Segue você</h3>
             </div>
        </div>
-       <a href="" class="follow"><h1>Seguir</h1></a>
+       <a href="/" class="follow"><h1>Seguir</h1></a>
     </div>
 
     );
@@ -61,9 +61,9 @@ function Suggestion(props){
 function User(props){
     return (
         <div class="sidebar-user-div">
-            <img class="sidebar-user-profile" src={props.userProfile} />
+            <img class="sidebar-user-profile" src={props.userProfile}  alt=""/>
             <div>
-                <a href="" class="user-name">{props.username}</a>
+                <a href="/" class="user-name">{props.username}</a>
                 <h3 class="name">{props.name}</h3>
             </div>
         </div>
