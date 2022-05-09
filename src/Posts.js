@@ -2,32 +2,18 @@ import React from 'react';
 export default function Posts(){
     const posts = [
         {
-            profileSrc: "images/profiles/circle profile 1.png",
-            profileName: "teste",
-            postSrc: "images/posts/angolano.png",
+            profileSrc: "images/profiles/meowed 1.png",
+            profileName: "meowed",
+            postSrc: "images/posts/gato-telefone 1.png",
             likedName: "respondeai",
             likedNumber: "101.523"
         },
         {
-            profileSrc: "images/profiles/circle profile 1.png",
-            profileName: "teste",
-            postSrc: "images/posts/2.jpg",
-            likedName: "respondeai",
-            likedNumber: "101.523"
-        },
-        {
-            profileSrc: "images/profiles/circle profile 1.png",
-            profileName: "teste",
-            postSrc: "images/posts/3.jpg",
-            likedName: "respondeai",
-            likedNumber: "101.523"
-        },
-        {
-            profileSrc: "images/profiles/circle profile 1.png",
-            profileName: "teste",
-            postSrc: "images/posts/5.jpg",
-            likedName: "respondeai",
-            likedNumber: "101.523"
+            profileSrc: "images/profiles/barked 1.png",
+            profileName: "barked",
+            postSrc: "images/posts/dog 1.png",
+            likedName: "adorable_animals",
+            likedNumber: "99.159"
         },
     ];
     return (
@@ -49,22 +35,14 @@ function Post(props){
         if (iconName === "heart-outline"){
             setIconName("heart");
             setIconClass("liked-icon");
-           // setIconClass("reaction-icons");
-
-           // document.querySelector(".reaction-icons").classList.add("liked-icon");
         }
         else if (iconName === "heart"){
             setIconName("heart-outline");
-           // document.querySelector(".liked-icon").classList.remove("liked-icon");
            setIconClass("reactions-style");
         }
 
     }
 
-    function teste(){
-        setIconClass("reaction-icons");
-
-    }
     return (
         <div class="posts-div">
      
@@ -83,8 +61,8 @@ function Post(props){
             <div class="image-bar">
                 <div class="image-bar-icons">
                 <button class={iconClass} onClick={changeIconClass}><ion-icon name={iconName}></ion-icon></button>
-                    <button class="reactions-style"><ion-icon name="chatbubble-outline"></ion-icon></button>
-                    <button class="reactions-style"><ion-icon name="paper-plane-outline"></ion-icon></button>
+                <button class="reactions-style"><ion-icon name="chatbubble-outline"></ion-icon></button>
+                <button class="reactions-style"><ion-icon name="paper-plane-outline"></ion-icon></button>
                 </div>
                 <button class="reactions-style"><ion-icon name="bookmark-outline"></ion-icon>
                 </button>

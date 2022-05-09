@@ -1,31 +1,31 @@
 export default function SideBar(){
     const suggestions = [
         {
-            profile: "images/profiles/Jotaro Kujo.jpg",
-            username: "kujo_jotaro"
+            profile: "images/profiles/badvibesmemes 1.svg",
+            username: "bad.vibes.memes"
         },
         {
-            profile: "images/profiles/kakyoin.jpg",
-            username: "kakyoin"
+            profile: "images/profiles/chibirdart 1.svg",
+            username: "chibirdart"
         },
         {
-            profile: "images/profiles/Jotaro Kujo.jpg",
-            username: "kujo_jotaro"
+            profile: "images/profiles/razoesparaacreditar 1.svg",
+            username: "razoesparaacreditar"
         },
         {
-            profile: "images/profiles/Jotaro Kujo.jpg",
-            username: "kujo_jotaro"
+            profile: "images/profiles/adorableanimals 1.svg",
+            username: "adorableanimals"
         },
         {
-            profile: "images/profiles/Jotaro Kujo.jpg",
-            username: "kujo_jotaro"
+            profile: "images/profiles/smallcutecats 1.png",
+            username: "smallcutecats"
         },
     ];
     return (
         <div>
      <div class="sidebar-div">
        
-        <User userProfile="images/profiles/joseph.jpg" username="JoJo" name="Joseph Joestar"/>
+        <User userProfile="images/profiles/catanacomics 1.svg" username="catanacomics" name="Catana"/>
 
         <div>
             <div class="suggestions-div">
@@ -35,7 +35,16 @@ export default function SideBar(){
             {suggestions.map(suggestion => <Suggestion profile={suggestion.profile} username={suggestion.username}/>)}
         </div>
 
-
+        
+            <h6>
+                Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
+                Termos • Localizações • Contas mais relevantes • Hashtags • 
+                Idioma
+            </h6>
+            <h6>
+                © 2021 INSTAGRAM DO FACEBOOK
+            </h6>
+        
      </div>
 
     </div>

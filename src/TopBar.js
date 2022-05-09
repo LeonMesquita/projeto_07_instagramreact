@@ -1,9 +1,4 @@
-import ReactDOM from 'react-dom';
-import Posts from './Posts';
-import SideBar from './SideBar';
-import Stories from './Stories';
-
-function TopBar(){
+export default function TopBar(){
     return (
        // <!--barra superior-->
         <div class="bar-father">
@@ -19,10 +14,10 @@ function TopBar(){
                   <input  class="divBusca" type="text" id="txtBusca" placeholder="Pesquisar"/>
               </div>
               <div class="div-logo">
-                  <a href="/"><ion-icon name="paper-plane-outline"   class="top-icons"></ion-icon></a>
-                  <a href="/"><ion-icon name="compass-outline"   class="top-icons"></ion-icon></a>
-                <a href="/"><ion-icon name="heart-outline"  class="top-icons"></ion-icon></a>
-                 <a href="/"><ion-icon name="person-outline"  class="top-icons"></ion-icon></a>
+                  <TopIcons iconName = "paper-plane-outline"/>
+                  <TopIcons iconName = "compass-outline"/>
+                  <TopIcons iconName = "heart-outline"/>
+                  <TopIcons iconName = "person-outline"/>
               </div>
               
           </div>
@@ -36,20 +31,8 @@ function TopBar(){
     )
 }
 
-function AppBody(){
-    return (
-        <div>
-            <TopBar />
-            <div class="page-content">
-                <div class="main-content-div">
-                    <Stories />
-                    <Posts />
-                </div>
-                <SideBar />
-            </div>
-        </div>
-    )
+function TopIcons(props){
+    return(
+        <a href="/"><ion-icon name={props.iconName}   class="top-icons"></ion-icon></a>
+    );
 }
-
-const app = AppBody()
-ReactDOM.render(app, document.querySelector(".root"));

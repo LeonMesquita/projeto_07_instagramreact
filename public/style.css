@@ -66,7 +66,13 @@ a {
 .insta-logo {
     width: 103px;
     height: 29px;
+}
 
+.divide {
+    width: 1px;
+    height: 25px;
+    background-color: #DBDBDB;
+    margin-right: 10px;
 }
 
 .divBusca{
@@ -309,6 +315,13 @@ a {
 
 
 
+}
+
+.sidebar-div h6 {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #C7C7C7;
+    ;
 }
 
 .sidebar-user-div {
